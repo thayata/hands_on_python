@@ -59,8 +59,9 @@ class demo:
         plt.tick_params(labelsize=f)
         plt.title(rf"number of dice$={self.n_sample}$, number of shots$={self.n_shot}$")
         plt.tight_layout()
+        plt.show()
 
-        return fig
+        return None
 
 
 # サイコロ$n$回ふって平均を取ることを繰り返した時の頻度の分布（＝確率）を描いてみる
@@ -72,6 +73,7 @@ class demo:
 # サイコロを1回振ることを1000回繰り返した時
 
 demo(1,1000).show_histogram()
+
 
 
 # サイコロを２回振ることを1000回繰り返した時
